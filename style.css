@@ -33,6 +33,7 @@ html {
     height: 100vh;
     font-size: var(--font-size);
     font-family: Figtree;
+    line-height: 150%;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
 
 .card {
     background-color: var(--white);
-    width: 384px;
+    width: 336px;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -76,17 +77,18 @@ p, h1 {
 .tag {
     background-color: var(--Yellow);
     width: fit-content;
-    padding: var(--space-150);
+    padding: var(--space-50) var(--space-150);
+    font-size: 14px;
     border-radius: 4px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .published {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 900;
 }
 
@@ -97,8 +99,7 @@ h1:hover {
 
 .text {
     color: var(--gray-500);
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -113,6 +114,7 @@ h1:hover {
 }
 
 .authorName {
+    font-size: 14px;
     font-weight: 900;
 }
 
