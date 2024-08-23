@@ -1,0 +1,126 @@
+:root {
+    --font-size: 16px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    --white: hsl(0, 0%, 100%);
+    --Yellow: hsl(47, 88%, 63%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    --space-200: 16px;
+    --space-150: 12px;
+    --space-100: 8px;
+    --space-50: 4px;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2-variations');
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+@font-face {
+    font-family: 'Figtree-Italic';
+    src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('woff2-variations');
+    src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+html {
+    height: 100vh;
+    font-size: var(--font-size);
+    font-family: Figtree;
+}
+
+body {
+    background-color: var(--Yellow);
+    position: relative;
+    height: 100%;
+    margin: 0px;
+}
+
+.card {
+    background-color: var(--white);
+    width: 384px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    box-shadow: 8px 8px 0px 0px var(--gray-950);
+}
+
+.headerImage {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardMain {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-150);
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.tag {
+    background-color: var(--Yellow);
+    width: fit-content;
+    padding: var(--space-150);
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+.published {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+h1:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.text {
+    color: var(--gray-500);
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-150);
+}
+
+.userImage {
+    width: 32px;
+}
+
+.authorName {
+    font-weight: 900;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
